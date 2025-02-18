@@ -4,8 +4,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css.css">
+
 </head>
 <body>
-    
+    <header>
+        <h1>Cards a bootstrap</h1>
+    </header>
+
+    <main>
+        <!-- Exemple bàsic d’una card: -->
+        <!-- Exercici: Prova aquest exemple en un fitxer HTML i canvia el text i el botó. -->
+        <div>
+            <h1>Ejemplo basico de una card:</h1>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Títol de la Card</h5>
+                    <p class="card-text">Aquest és un exemple bàsic d'una card a Bootstrap.</p>
+                    <a href="#" class="btn btn-success">Descubre mas</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cards amb imatges -->
+        <!-- ✅ Exercici: Substitueix la imatge per una altra i personalitza el text i els botons. -->
+        <div class="card" style="width: 18rem;">
+            <img src="img/consejos-imagenes.jpg" class="card-img-top" style="width: 100%;" alt="Imatge de prova">
+            <div class="card-body">
+                <h5 class="card-title">Card amb Imatge</h5>
+                <p class="card-text">Aquesta card té una imatge a la part superior.</p>
+                <a href="#" class="btn btn-primary">Veure més</a>
+            </div>
+        </div>
+
+        <!-- Cards amb una llista -->
+        <!-- Les cards poden contenir llistes d’informació: -->
+        <!-- ✅ Exercici: Crea una llista personalitzada amb altres ciutats o categories. -->
+        <div class="card" style="width: 18rem;">
+            <div class="card-header">
+            Destinos a visitar en la serrania de Cuenca
+            </div>
+            <ul class="list-group list-group-flush">
+            <li class="list-group-item">Ciudad Encantada</li>
+            <li class="list-group-item">Nacimiento del Río Cuervo</li>
+            <li class="list-group-item">Ventano del Diablo</li>
+            </ul>
+        </div>
+
+
+
+
+        <!-- Agrupar Cards -->
+        <!-- Podem mostrar diverses cards una al costat de l’altra amb card-group. -->
+        <!-- ✅ Exercici: Prova d’afegir més cards a aquest grup i canvia les imatges. -->
+        <div class="card-group"> <!--card-group → Fa que les cards es disposin en una mateixa línia i amb el mateix height.-->
+            <div class="card">
+                <img src="img/consejos-imagenes.jpg" class="card-img-top" alt="Imatge">
+                <div class="card-body">
+                    <h5 class="card-title">Card 1</h5>
+                    <p class="card-text">Text descriptiu de la primera card.</p>
+                </div>
+            </div>
+        
+            <div class="card">
+                <img src="img/consejos-imagenes.jpg" class="card-img-top" alt="Imatge">
+                <div class="card-body">
+                    <h5 class="card-title">Card 2</h5>
+                    <p class="card-text">Text descriptiu de la segona card.</p>
+                </div>
+            </div>
+        
+            <div class="card">
+                <img src="img/consejos-imagenes.jpg" class="card-img-top" alt="Imatge">
+                <div class="card-body">
+                    <h5 class="card-title">Card 3</h5>
+                    <p class="card-text">Text descriptiu de la tercera card.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="img/consejos-imagenes.jpg" class="card-img-top" alt="Imatge">
+                <div class="card-body">
+                    <h5 class="card-title">Card 4</h5>
+                    <p class="card-text">Text descriptiu de la cuarta card.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="img/consejos-imagenes.jpg" class="card-img-top" alt="Imatge">
+                <div class="card-body">
+                    <h5 class="card-title">Card 5</h5>
+                    <p class="card-text">Text descriptiu de la quinta card.</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </main>
+
+
+    <footer style="margin-top: 40px;">
+        <!-- Cards amb peus de pàgina (Footers) -->
+        <!-- ✅ Exercici: Canvia el text del peu de pàgina per una altra informació (data,autor, etc.). -->
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Card amb Footer</h5>
+                <p class="card-text">Para mas informacion, no dudes en contactarnos</p>
+            </div>
+            <!-- card-footer → Afegim un text a la part inferior: -->
+            <div class="card-footer text-muted">
+                Data: 18/02/2025 | Autor: John Doe
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
